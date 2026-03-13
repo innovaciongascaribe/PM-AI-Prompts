@@ -206,3 +206,11 @@ Over time, this repository may include:
 - real-world usage examples  
 
 More than just a prompt collection, this project aims to gradually evolve into a **practical AI-powered Product Management playbook**.
+
+---
+
+## License
+
+This project is licensed under the MIT License.
+
+See the [LICENSE](LICENSE) file for more details.
