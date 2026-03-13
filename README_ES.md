@@ -206,3 +206,11 @@ Con el tiempo este repositorio puede incluir:
 - ejemplos prácticos de uso  
 
 Más que una simple colección de prompts, la idea es que este proyecto evolucione hacia un **playbook práctico de Product Management apoyado por inteligencia artificial**.
+
+---
+
+## Licencia
+
+Este proyecto está publicado bajo la licencia MIT.
+
+Consulta el archivo [LICENSE](LICENSE) para más información.
