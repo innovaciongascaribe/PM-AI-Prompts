@@ -1,14 +1,15 @@
 # Prompt Template
 
-This template defines the standard structure used for prompts in this repository.
+This document defines the standard structure used to write prompts in this repository.
 
-The goal is to keep prompts **clear, reusable, and scalable** while supporting multilingual inputs and structured outputs.
+The objective is to keep prompts **clear, reusable and consistent**, while avoiding unnecessary complexity.  
+Version control, authorship and dates are handled directly by GitHub.
 
 ---
 
-# Prompt Name
+# Prompt Title
 
-Short descriptive name of the prompt.
+Provide a clear and descriptive name for the prompt.
 
 Example:
 
@@ -18,47 +19,41 @@ Meeting Minutes from Transcript
 
 # Purpose
 
-Describe what the prompt is designed to do.
+Explain briefly what the prompt is designed to do.
+
+This section should answer:
+
+- What problem does the prompt solve?
+- What output should be generated?
 
 Example:
 
-Generate structured meeting minutes from a meeting transcript while maintaining the format of the provided template.
-
----
-
-# Use Cases
-
-Describe typical situations where the prompt should be used.
-
-Examples:
-
-- Generate meeting minutes from transcripts
-- Extract decisions from discussions
-- Structure raw meeting notes
+Generate structured meeting minutes from a meeting transcript while maintaining the structure of a provided template.
 
 ---
 
 # Inputs
 
-List the required inputs.
+Describe the inputs required to use the prompt.
 
 Examples:
 
 - Meeting transcript
-- Document template
+- Supporting documentation
+- Template to populate
 - Additional instructions
 
 ---
 
 # Language Handling
 
-Prompts must support multilingual inputs.
+Prompts must support multilingual workflows.
 
 Rules:
 
 - The output language must match the language of the input content.
-- If a template is provided, the template language must remain unchanged.
-- Inserted content must follow the language of the input.
+- If a template is provided, its language and structure must not be modified.
+- Generated content must follow the language of the source material.
 
 Examples:
 
@@ -67,72 +62,72 @@ English transcript → English output
 
 ---
 
-# Prompt
+# Prompt Instructions
 
-Write the prompt instructions here.
+Write the actual prompt instructions here.
+
+A good prompt should include:
+
+1. Role definition
+2. Task description
+3. Processing steps
+4. Output requirements
 
 Example structure:
 
-Role definition  
-Task description  
-Processing instructions  
-Output instructions
-
-Example:
-
 You are an expert Product Management assistant.
 
-Your task is to analyze the provided meeting transcript and generate structured meeting minutes following the provided template.
+Your task is to analyze the provided input and generate structured output.
 
 Steps:
 
-1. Analyze the meeting transcript.
-2. Identify key discussion points.
-3. Extract decisions made during the meeting.
-4. Extract action items and responsible stakeholders.
-5. Populate the template while preserving its structure.
+1. Analyze the provided content.
+2. Identify the most relevant information.
+3. Organize the information clearly.
+4. Follow the required output structure.
 
-Important rules:
+Rules:
 
-- Do not change the template structure.
-- Insert information in the appropriate sections.
-- Maintain the language of the input transcript.
+- Do not modify the template structure if one is provided.
+- Do not invent information that is not present in the input.
+- Ensure clarity and completeness.
 
 ---
 
 # Output Format
 
-Describe how the output must be structured.
+Define the expected output structure.
 
-Example:
-
-The output must follow the structure of the provided template.
-
-If no template is provided, structure the output as:
+Examples:
 
 Meeting Summary  
-Key Decisions  
+Key Discussion Points  
+Decisions  
 Action Items  
 Open Questions
+
+If a template is provided, the output must follow the template structure exactly.
 
 ---
 
 # Validation
 
-Before finalizing the response, verify that:
+Before producing the final output, verify that:
 
-- The output follows the expected structure.
-- The language matches the input language.
+- The structure follows the required format.
+- The language matches the source input.
 - The template structure has not been modified.
-- All relevant information from the input has been captured.
+- All relevant information has been captured.
+
+If any issues are detected, correct them before generating the final output.
 
 ---
 
-# Notes
+# Change Log
 
-Optional section for additional guidance.
+Use this section to document meaningful updates to the prompt.
 
-Examples:
-
-- Avoid summarizing critical decisions incorrectly.
-- Preserve key terminology used in the meeting.
+| Version | Description |
+|--------|-------------|
+| v2.0 | Simplified prompt template structure and added multilingual handling guidelines |
+| v1.0 | Initial prompt template |
